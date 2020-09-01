@@ -2,9 +2,11 @@ import asyncio
 import discord
 import datetime
 import threading
+import os
 
 client = discord.Client()
-token = "Njg5Mzg4MzMyMjE5NjI5NTY4.XnhW9A.XDx34RYO-nCm79btDMlc4bTwn6Q"
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
 
 @client.event
 async def on_ready():
