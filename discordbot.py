@@ -649,6 +649,3 @@ async def on_message(message):
         file.write(information);
         file.close()
 
-
-
-client.run(token)
