@@ -6,7 +6,6 @@ import os
 
 client = discord.Client()
 access_token = os.environ["BOT_TOKEN"]
-client.run(access_token)
 
 @client.event
 async def on_ready():
@@ -649,3 +648,4 @@ async def on_message(message):
         file.write(information);
         file.close()
 
+client.run(access_token)
