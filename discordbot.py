@@ -5,7 +5,7 @@ import threading
 import os
 
 client = discord.Client()
-access_token = os.environ["BOT_TOKEN"]
+
 
 @client.event
 async def on_ready():
@@ -648,4 +648,5 @@ async def on_message(message):
         file.write(information);
         file.close()
 
+access_token = os.environ["BOT_TOKEN"]        
 client.run(access_token)
