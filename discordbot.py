@@ -131,7 +131,7 @@ tankFlag = False
 @client.event
 async def on_message(message):
     if message.content.startswith("!도움말"):
-        embed = discord.Embed(title="안녕하세요. 제작자 < 흥> 입니다.", description="``명령어 목록``에 대해 설명해 드리겠습니다.\n해당 봇은 명령어``!``를 기본으로 합니다.", color=0x62c1cc)
+        embed = discord.Embed(title="안녕하세요. 제작자 <잭 흥> 입니다.", description="``명령어 목록``에 대해 설명해 드리겠습니다.\n해당 봇은 명령어``!``를 기본으로 합니다.", color=0x62c1cc)
         embed.add_field(name="■  보스 명령어", value="``!보스탐``\n``!<보스이름> 컷``  (현재시간 자동등록)\n``!<보스이름> 컷 hh:mm:ss``  (컷시간 수동등록)\n``!보스탐초기화``", inline=False)
         embed.add_field(name="<보스이름>", value="``빅마`` ``우크`` ``마녀`` ``바슬`` ``칼리고``\n``블스`` ``은둔`` ``깬쿠`` ``빨`` ``파`` ``초`` ``가임`` ``데블랑``\n``등던자라`` ``해변자라`` ``탱크`` \n``+ 원하시는거 추가해드립니다``", inline=False)
         embed.add_field(name="■  지도 명령어", value="``!지도 <맵이름>``", inline=False)
