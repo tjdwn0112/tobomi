@@ -133,7 +133,7 @@ async def on_message(message):
     if message.content.startswith("!도움말"):
         embed = discord.Embed(title="안녕하세요. 제작자 <잭 흥> 입니다.", description="``명령어 목록``에 대해 설명해 드리겠습니다.\n해당 봇은 명령어``!``를 기본으로 합니다.", color=0x62c1cc)
         embed.add_field(name="■  보스 명령어", value="``!보스탐``\n``!<보스이름> 컷``  (현재시간 자동등록)\n``!<보스이름> 컷 hh:mm:ss``  (컷시간 수동등록)\n``!보스탐초기화``", inline=False)
-        embed.add_field(name="<보스이름>", value="``빅마`` ``우크`` ``마녀`` ``바슬`` ``칼리고``\n``블스`` ``은둔`` ``깬쿠`` ``빨`` ``파`` ``초`` ``가임`` ``데블랑``\n``등던자라`` ``해변자라`` ``탱크`` \n``+ 원하시는거 추가해드립니다``", inline=False)
+        embed.add_field(name="<보스이름>", value="``빅마`` ``우크`` ``마녀`` ``바슬`` ``칼리고``\n``블스`` ``은둔`` ``깬`` ``빨`` ``파`` ``초`` ``가임`` ``데블랑``\n``등던자라`` ``해변자라`` ``탱`` \n``+ 원하시는거 추가해드립니다``", inline=False)
         embed.add_field(name="■  지도 명령어", value="``!지도 <맵이름>``", inline=False)
         embed.add_field(name="<맵이름>", value="``등던1`` ``등던2`` ``등던3`` ``등던4`` ``등던5``\n ``노을숲`` ``카타르`` ``라평`` ``폐숲`` ``중사`` ``제사`` ``왕사``\n``누각`` ``동`` ``서`` ``요새`` ``미로`` ``타신``\n``미궁`` ``에이존`` ``비존``\n``시프넬`` ``세레인`` ``오통`` ``실험실`` ``신전``", inline=False)
         await message.channel.send(embed=embed)
@@ -440,7 +440,7 @@ async def on_message(message):
         tmp_green3TimeString = green3TimeString = nextTime.strftime('%H:%M:%S')
         await message.channel.send('```diff\n다음 우히힉(초) ' + green3TimeString + '\n---(젠타임 01:08:30 적용)```')
 
-    if message.content.startswith('!깬쿠 컷'):
+    if message.content.startswith('!깬 컷'):
         sleep2Flag = False
         sleep2Time = nextTime = now+datetime.timedelta(hours=1)+datetime.timedelta(minutes=3)+datetime.timedelta(seconds=30)
         tmp_sleep2TimeString = sleep2TimeString = nextTime.strftime('%H:%M:%S')
@@ -470,11 +470,11 @@ async def on_message(message):
         tmp_black1TimeString = black1TimeString = nextTime.strftime('%H:%M:%S')
         await message.channel.send('```diff\n다음 블랙스컬 ' + black1TimeString + '\n---(젠타임 00:57:00 적용)```')
 
-    if message.content.startswith('!탱크 컷'):
+    if message.content.startswith('!탱 컷'):
         tankFlag = False
-        tankTime = nextTime = now+datetime.timedelta(hours=0)+datetime.timedelta(minutes=58)+datetime.timedelta(seconds=20)
+        tankTime = nextTime = now+datetime.timedelta(hours=0)+datetime.timedelta(minutes=58)+datetime.timedelta(seconds=25)
         tmp_tankTimeString = tankTimeString = nextTime.strftime('%H:%M:%S')
-        await message.channel.send('```diff\n다음 탱크 ' + tankTimeString + '\n---(젠타임 00:58:20 적용)```')
+        await message.channel.send('```diff\n다음 탱크 ' + tankTimeString + '\n---(젠타임 00:58:25 적용)```')
 
     if message.content.startswith('!해변자라 컷'):
         hzaraFlag = False
